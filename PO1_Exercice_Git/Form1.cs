@@ -16,7 +16,7 @@ namespace PO1_Exercice_Git
             {
                 somme = tableau[i];
             }
-            MessageBox.Show("La somme des élément du tableau est : " + somme);
+            MessageBox.Show("La somme des ï¿½lï¿½ment du tableau est : " + somme);
         }
 
         private void button_TestPremier_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace PO1_Exercice_Git
             {
                 if (nombre < 2)
                 {
-                    MessageBox.Show("Le nombre doit être supérieur ou égal à 2");
+                    MessageBox.Show("Le nombre doit ï¿½tre supï¿½rieur ou ï¿½gal ï¿½ 2");
                 }
                 else
                 {
@@ -51,7 +51,7 @@ namespace PO1_Exercice_Git
             }
             else
             {
-                MessageBox.Show("Le nombre doit être un entier");
+                MessageBox.Show("Le nombre doit ï¿½tre un entier");
             }
         }
 
@@ -59,6 +59,18 @@ namespace PO1_Exercice_Git
         {
             int somme = 0;
             for (int i = 0; i < tableau.Length; i++)
+            {
+                if (tableau[i] > somme)
+                {
+                    somme = tableau[i];
+                }
+            }
+        }
+
+        private void button_PlusGrand_Click(object sender, EventArgs e)
+        {
+            int somme = 0;
+            for (int i = 0; i <= tableau.Length; i++)
             {
                 if (tableau[i] > somme)
                 {
